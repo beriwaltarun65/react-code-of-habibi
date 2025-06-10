@@ -14,7 +14,9 @@ import Createuser from "./pages/createUser";
 import Add_Subcategory from "./pages/Add_subcategory";
 import Add_Product from "./pages/Add_product";
 import EditCategory from "./pages/EditCategory";
-import Searchbar from "./pages/Searchbar";
+import SearchResults from "./pages/SearchResults";
+import Buy_Now from "./pages/Buy_Now";
+import Order from "./pages/Order";
 
 
 function App() {
@@ -33,7 +35,9 @@ function App() {
         <Route path="/create-Sub-cat/:id" element={<Add_Subcategory />} />
         <Route path="/add-product/:id" element={<Add_Product />} />
         <Route path="/edit-category/:id" element={<EditCategory />} /> 
-        <Route path="/Searchbar" element={<Searchbar />} />        
+        <Route path="/buy-now/:productId" element={<Buy_Now />} />
+        <Route path="/search" element={<SearchResults />} />    
+        <Route path="/order-history/" element={<Order />} />
       </Routes>
     </BrowserRouter>
   );
